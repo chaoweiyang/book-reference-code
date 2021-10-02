@@ -63,10 +63,10 @@ class lineSegment:
            and (lineSeg.p1.x-x0)*(x0-lineSeg.p2.x)>=0\
            and (self.p1.y-y0)*(y0-self.p2.y)>=0 \
            and (lineSeg.p1.y-y0)*(y0-lineSeg.p2.y)>=0):
-             print "x0 and y0 belongs two line segment : ", x0, y0
+             print("x0 and y0 belongs two line segment : ", x0, y0)
              return Point(x0, y0)
         else:
-            print "x0 and y0 does not meet the conditions"
+            print("x0 and y0 does not meet the conditions")
             return -1
 
 ## Set up global variables
@@ -95,7 +95,7 @@ def main():
         global startDraw
         global points
         global lineSegs
-        print "startDraw: " , startDraw, x, y
+        print("startDraw: " , startDraw, x, y)
         if startDraw:
             t.setposition(x, y)
             t.dot(5, "blue")
@@ -165,7 +165,7 @@ def main():
         startDraw = False
         points = []
         lineSegs = []
-        print 'Clean all features'
+        print('Clean all features')
         t.reset()   ## Reset turtle
     
     cleanDraw = Tkinter.Button(frame, width = 15, text= 'Clean Draw',fg="blue", command=cleanHandler)
@@ -188,7 +188,7 @@ def main():
             Tkinter.Button(win, text='OK', command=win.destroy).pack()
         else:
             ## Draw intersection
-            print 'intesection is : ', result.x, result.y
+            print('intesection is : ', result.x, result.y)
             ## Now label the intersection
             t.penup()    
             t.setposition(result.x, result.y)
