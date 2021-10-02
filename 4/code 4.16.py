@@ -1,4 +1,4 @@
->>> f = open ('C:/Users/Phil/Downloads/points.txt', 'r')
+>>> f = open ('C:/Users/Phil/Downloads/points.txt', 'r') #please update file path to where you put your points.txt file
 >>> f.readline()  # Read the 1st  line
 >>> f.readline() # Read the 2nd line
 >>> f.readline()  # Read the 3rd line
