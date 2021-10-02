@@ -2,7 +2,7 @@
 	try:
 		return (y2-y1)/(x2-x1)
 	except ZeroDivisionError:
-		print 'Error: x1 equals x2'
+		print('Error: x1 equals x2')
 		return None
 
 	
