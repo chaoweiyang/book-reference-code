@@ -10,7 +10,7 @@ rows = arcpy.da.SearchCursor(inputdata, ["Shape_Leng", "NAME", "TYPE"])
 # iterate through the rows in the cursor
 for row in rows:
 	# attributes are accessed using row[index] - e.g. row[0] is "Shape_Leng"
-	print "{}, {}, {}\n".format(row[0], row[1], row[2])
+	print("{}, {}, {}\n".format(row[0], row[1], row[2]))
 
 """
 	The cursor will place a lock on the data until either the script completes or 
