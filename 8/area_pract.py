@@ -27,7 +27,7 @@ class Polygon:
                           self.points[index].x * self.points[index+1].y)
             area = area + currentArea            
             index += 1
-        print 'area is :', area
+        print('area is :', area)
         return area
 ## Set up global variables
 startDraw = False
@@ -53,7 +53,7 @@ def main():
     def clickHandler(x,y): 
         global startDraw
         global points
-        print "startDraw: " , startDraw, x, y
+        print("startDraw: " , startDraw, x, y)
         if startDraw:
             t.setposition(x, y)         
         else:            
@@ -80,7 +80,7 @@ def main():
         ## handle the polygon, snap last point and make sure it is the same as the first point
         global points
         num = len(points)
-        print 'points number: ', num
+        print('points number: ', num)
         """
         Since the last point should be the same as the first point, we need
         to delete the last point first, and then append the first point
@@ -101,7 +101,7 @@ def main():
         global startDraw
         ## Reset the global variable startDraw
         startDraw = False
-        print 'Clean all features'
+        print('Clean all features')
         t.reset()   ## Reset turtle
     
     cleanDraw = Tkinter.Button(frame, width = 15, text= 'Clean Draw',fg="blue", command=cleanHandler)
