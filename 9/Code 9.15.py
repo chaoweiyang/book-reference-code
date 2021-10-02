@@ -6,7 +6,7 @@ fcList = arcpy.ListFeatureClasses('*','Polyline')
 
 # print the list of feature classes one at a time
 for fc in fcList:
-	print '-----Perform buffer analysis for Polyline:', fc
+	print('-----Perform buffer analysis for Polyline:', fc)
 	inputFCName = fc[0:-4] # get rid of '.shp'
 	outputFCName = inputFCName + '_buffer_10Meter' + '.shp'
 	arcpy.Buffer_analysis(fc, outputFCName, '10 Meters')
