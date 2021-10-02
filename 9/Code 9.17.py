@@ -7,11 +7,11 @@ fields = desc.fields
 
 for field in fields:
 	# manipulate field object and print out property of each field
-	print field.name
-	print field.aliasName
-	print field.type
+	print(field.name)
+	print(field.aliasName)
+	print(field.type)
 	if field.type == "Double":
-		print field.scale
+		print(field.scale)
 
 
 		
